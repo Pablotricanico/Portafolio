@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Pablo Tricanico</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="scripts/main.js" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Pablo Tricanico</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre_mi">Sobre Mi</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="seccion" id="inicio">
+        <img src="./assets/images/IMG-20241013-WA0102.jpg" alt="Imagen mia" />
+        <div class="textoInicio">
+          <h1>Hola mi nombre es Pablo Tricanico</h1>
+          <p>Futuro desarrollador web</p>
+          <div>
+            <a href="#proyectos">Ver mis Proyectos</a>
+            <a href="#">Descargar mi CV</a>
+          </div>
+        </div>
+      </section>
+      <section class="seccion" id="sobre_mi">
+        <div>
+          <h3>Sobre mi</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            facere consequatur possimus, a, officiis ipsa dolore pariatur at
+            ratione nisi, illum laboriosam debitis perspiciatis dolor. Suscipit
+            delectus fugiat omnis esse.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, enim
+            magnam totam numquam asperiores impedit incidunt? Ducimus, beatae
+            quaerat molestiae deserunt hic voluptates, eligendi obcaecati, nulla
+            illum sequi rerum aliquid.
+          </p>
+          <div class="skills">
+            <div class="skill">
+              <img src="assets/images/html.png" alt="HTML5" />
+              <span>HTML5</span>
+            </div>
+            <div class="skill">
+              <img src="assets/images/css.png" alt="CSS3" />
+              <span>CSS3</span>
+            </div>
+            <div class="skill">
+              <img src="assets/images/js.png" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+            <!-- Agregar más habilidades aquí -->
+          </div>
+        </div>
+        <img
+          src="assets/images/IMG-20241013-WA0102.jpg"
+          alt="yo"
+          class="imgYo"
+        />
+      </section>
+      <section class="seccion" id="proyectos">
+        <h3>Proyectos</h3>
+        <ul id="tarjetas">
+          <li class="tarjeta">
+            <img src="assets/images/notfound.png" alt="notfound" />
+            <p>Proyecto 1</p>
+          </li>
+          <li class="tarjeta">
+            <img src="assets/images/notfound.png" alt="notfound" />
+            <p>Proyecto 1</p>
+          </li>
+          <li class="tarjeta">
+            <img src="assets/images/notfound.png" alt="notfound" />
+            <p>Proyecto 1</p>
+          </li>
+          <li class="tarjeta">
+            <img src="assets/images/notfound.png" alt="notfound" />
+            <p>Proyecto 1</p>
+          </li>
+          <li class="tarjeta">
+            <img src="assets/images/notfound.png" alt="notfound" />
+            <p>Proyecto 2</p>
+          </li>
+          <li class="tarjeta">
+            <img src="assets/images/notfound.png" alt="notfound" />
+            <p>Proyecto 3</p>
+          </li>
+        </ul>
+      </section>
+      <section class="seccion" id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes un proyecto o alguna consulta? ¡Hablemos!</p>
+        <form action="#" method="post" class="contact-form">
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Tu nombre"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Tu email"
+            required
+          />
+
+          <label for="message">Mensaje:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tu mensaje..."
+            required
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="contact-info">
+          <p>O contáctame directamente:</p>
+          <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/tuusuario" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+            <a href="https://twitter.com/tuusuario" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Pablo Tricanico. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+        <a href="https://twitter.com/tuusuario" target="_blank">Twitter</a>
+      </div>
+    </footer>
+  </body>
+</html>
