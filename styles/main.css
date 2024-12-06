@@ -16,8 +16,11 @@
     margin: 0;
     font-family: 'Radley';
     line-height: 1.6;
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
+}
+p{
+  font-size: 1rem;
 }
 
 header{
@@ -27,7 +30,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    
 }
 
 header .logo h1{
@@ -64,9 +66,10 @@ main{
 }
 
 #inicio {
-    display: grid;
-    align-items: center;
-    justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
     min-height: 90vh;
 }
 
@@ -126,9 +129,12 @@ main{
 }
 
 #sobre_mi div h3{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  border-bottom: 2px solid var(--bordes-txtSec);
+  display: inline-block;
 }
 
 #sobre_mi div p{
@@ -149,6 +155,10 @@ main{
     text-align: center;
   }
   
+  .skillNo{
+    filter: grayscale(100%);
+  }
+
   .skill img {
     width: 50px;
     height: 50px;
@@ -176,10 +186,10 @@ main{
 }
 #tarjetas{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
     width: 80%;
-
+    
 }
 #tarjetas .tarjeta{
     display: flex;
@@ -193,14 +203,21 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s
 }
-
+#tarjetas .links{
+  margin: 1rem;
+}
+#tarjetas .links a{
+  color: var(--texto);
+  display: inline;
+}
 .tarjeta:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 #tarjetas .tarjeta img{
-    width: 50%;
+    width: 45%;
     border-radius: 10px 10px 0 0;
+    margin: 1rem;
 }
 
 #proyectos h3{
@@ -217,6 +234,14 @@ main{
     text-align: center;
     background-color: #1d2d44;
     color: #f0ebd8;
+  }
+  #contacto h2{
+    font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  border-bottom: 2px solid var(--bordes-txtSec);
+  display: inline-block;
   }
   
   .contact-form {
